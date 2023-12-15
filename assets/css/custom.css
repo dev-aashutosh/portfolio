@@ -62,7 +62,7 @@
     }
 
     100% {
-        transform: translateY(-90%) rotate(360deg) scale(1);
+        transform: translateY(-90%) rotate(365deg) scale(1);
     }
 }
 
