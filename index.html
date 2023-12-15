@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
 <body data-bs-theme="dark">
@@ -19,11 +21,10 @@
         <video src="assets/images/backgrounds/back-1.mp4" autoplay muted loop></video>
     </div>
     <!-- header  -->
-    <header>
+    <header class="position-sticky top-0 z-1 morphism-black">
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid container-lg">
-                <a class="navbar-brand" href="#">Ashu
-                    <i class="fa-solid fa-angle-down fs-6 theme-color"></i>
+                <a class="navbar-brand" href="index.html">Ashu
                 </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content">
                     <i class="fa-solid fa-bars-staggered theme-color"></i>
@@ -31,18 +32,18 @@
                 <div class="collapse navbar-collapse" id="nav-content">
                     <ul class="navbar-nav mx-auto fs-6 fw-semibold ">
                         <li class="nav-item">
-                            <a class="nav-link theme-color" href="#">Home</a>
+                            <a class="nav-link theme-color" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Works</a>
+                        <li class="nav-item"><a class="nav-link" href="#works">Works</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <button class="btn theme-color px-0" type="submit">Let's Talk</button>
+                    <a class="btn py-2 fw-medium theme-color theme-border" href="#contact">Let's Talk</a>
                     </button>
                 </div>
             </div>
@@ -112,7 +113,7 @@
             </div>
     </section>
     <!-- About -->
-    <section class="py-5">
+    <section class="py-5" id="about">
         <div class="container-fluid container-lg">
             <div class="mb-5 text-center ">
                 <p class="fs-3 fw-normal theme-color m-0">
@@ -314,7 +315,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 d-md-none d-none ">
+                                <div class="col-6 col-sm-4 col-md-3 d-none d-sm-block d-md-none">
                                     <div class="card bg-black bg-opacity-50 rounded-4 theme-border py-3">
                                         <div class="card-body text-center pb-0">
                                             <img src="assets/images/logos/skill1.png" alt="" style="height: 55px">
@@ -336,7 +337,7 @@
         </div>
     </section>
     <!-- works -->
-    <section class="works">
+    <section class="pb-5" id="works">
         <div class="container-fluid container-lg ">
             <div class="mb-5 text-center ">
                 <p class="fs-3 fw-normal theme-color m-0">
@@ -347,29 +348,142 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="border border-2 rounded-4 morphism p-3 mb-4 mb-lg-0 overflow-hidden">
-
-                        <iframe src="https://femmes.netlify.app/" height="720px" width="100%"
-                            title="Iframe Example"></iframe>
-                        <a href="https://femmes.netlify.app/" class="theme-color fs-4">
-                            Visit
-                        </a>
+                    <div class="border border-2 rounded-4 morphism mb-4 mb-12 overflow-hidden">
+                        <iframe src="https://femmes.netlify.app/" height="600px" width="102%">
+                        </iframe>
+                        <div class="p-2">
+                            <p class="fs-4 fw-normal theme-color m-0">Cosmetics Website Template</p>
+                            <a href="https://femmes.netlify.app/" target="_blank"
+                                class="fs-6 text-secondary-emphasis fw-semibold">
+                                Click For Live Preview
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="border border-2 rounded-4 morphism p-3 mb-4 mb-lg-0 overflow-hidden">
-                        <a href="https://adminas.netlify.app/">
-                            <iframe src="https://adminas.netlify.app/" height="720px" width="100%"
-                                title="Iframe Example">
-                            </iframe>
-                        </a>
+                    <div class="border border-2 rounded-4 morphism mb-4 mb-lg-0 overflow-hidden">
+                        <iframe src="https://adminpannelas.netlify.app/" height="600px" width="102%">
+                        </iframe>
+                        <div class="p-2">
+                            <p class="fs-4 fw-normal theme-color m-0">Admin Pannel Template</p>
+                            <a href="https://adminpannelas.netlify.app/" target="_blank"
+                                class="fs-6 text-secondary-emphasis fw-semibold">
+                                Click For Live Preview
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
+    <!-- contact us -->
+    <section class="pb-5" id="contact">
+        <div class="container-fluid container-lg">
+            <div class="text-center mb-4">
+                <p class="fs-3 fw-normal theme-color m-0">
+                    Contact
+                </p>
+                <p class="display-5 text-dark-emphasis fw-normal white-space m-0">I Wanna Hear From You,
+                    Let's Get In Touch
+                </p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="border border-2 rounded-4 morphism p-3 my-4">
+                        <p class="fs-4 fw-normal theme-color m-0">
+                            Contact Info
+                        </p>
+                        <p class="display-6 white-space">Let’s Talk For Your <span
+                                class="text-secondary-emphasis fw-semibold">
+                                Next Projects
+                            </span></p>
+                        <p class="fs-6 text-secondary fw-semibold ">Feel free to get in touch with me. I am
+                            always open to discussing new projects, creative ideas or opportunities to be
+                            part of your visions.
+                        </p>
+                        <p>
+                            <a href="https://maps.app.goo.gl/Dtc1FhZ9kR4oHboc6" class="fs-6 text-secondary-emphasis">
+                                <i class="fa-solid fa-location-dot fa-xl theme-color me-2 "></i>
+                                Surat, Gujrat
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:someone@example.com" class="fs-6 text-secondary-emphasis">
+                                <i class="fa-regular fa-envelope fa-xl theme-color me-2 "></i>
+                                im.ashutoshx@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+918758360468" class="fs-6 text-secondary-emphasis">
+                                <i class="fa-regular fa-address-book fa-xl theme-color me-2 "></i>
+                                +918 758 360 468
+                            </a>
+                        </p>
+                        <div class="social-media-handle">
+                            <p class="fs-5 fw-semibold text-secondary-emphasis mb-2">
+                                Catch Me On Social Media
+                            </p>
+                            <a
+                                href="https://wa.me/+918758360468?text=Hello,+I+am+interested+in+knowing+more+about+your+services.">
+                                <i class="fa-brands fa-whatsapp fa-2x theme-color me-4"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ashutoshx_?igshid=OGQ5ZDc2ODk2ZA==">
+                                <i class="fa-brands fa-instagram fa-2x theme-color me-4"></i>
+                            </a>
+                            <a href="https://x.com/ashutoshx__?s=09">
+                                <i class="fa-brands fa-x-twitter fa-2x theme-color me-4"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="border border-2 rounded-4 morphism p-3 my-4">
+                        <p class="position-relative title ps-4 fs-2 text-secondary-emphasis fw-medium ">
+                            Let’s Work
+                            <span class="theme-color">Together.</span>
+                        </p>
+                        <form class="form">
+                            <div class="d-flex flex-column flex-wrap row-gap-3">
+                                <label class="position-relative ">
+                                    <input class="input bg-transparent text-secondary-emphasis rounded-2 w-100"
+                                        type="text" placeholder="" required="" />
+                                    <span class="theme-color">Name</span>
+                                </label><label class="position-relative ">
+                                    <input class="input bg-transparent text-secondary-emphasis rounded-2 w-100"
+                                        type="email" placeholder="" required="" />
+                                    <span class="theme-color">Email</span>
+                                </label>
+                                <label class="position-relative ">
+                                    <input class="input bg-transparent text-secondary-emphasis rounded-2 w-100"
+                                        type="number w-100" placeholder="" required="" />
+                                    <span class="theme-color">Phone </span>
+                                </label>
+                                <label class="position-relative ">
+                                    <input class="input bg-transparent text-secondary-emphasis rounded-2 w-100"
+                                        type="text w-100" placeholder="" required="" />
+                                    <span class="theme-color">Subject</span>
+                                </label>
+                                <label class="position-relative ">
+                                    <input class="input bg-transparent text-secondary-emphasis rounded-2 w-100"
+                                        type="text" placeholder="" required="" />
+                                    <span class="theme-color">Description</span>
+                                </label>
+
+                                <button class="btn theme-border fw-semibold w-100">Let’s
+                                    Talk</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
 
 
