@@ -5,6 +5,6 @@
 
     .title::before,
     .title::after {
-        top: 28%;
+        top: 25%;
     }
 }
