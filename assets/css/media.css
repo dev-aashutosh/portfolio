@@ -1,6 +1,10 @@
 @media (max-width: 992px) {
     iframe {
         width: 105%;
-        /* height: ; */
+    }
+
+    .title::before,
+    .title::after {
+        top: 28%;
     }
 }
